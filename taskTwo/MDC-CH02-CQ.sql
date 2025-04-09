@@ -17,7 +17,7 @@
 14. SELECT C.LastName, C.FirstName, C.Phone FROM CUSTOMER C JOIN INVOICE I ON C.CustomerID = I.CustomerID WHERE I.TotalAmount > 100.00 ORDER BY C.LastName ASC, C.FirstName DESC;
 
 15. SELECT LastName, FirstName, Phone 
-FROM CUSTOMER 
+FROM CUSTOMER I
 WHERE CustomerID IN (
     SELECT I.CustomerID 
     FROM INVOICE_ITEM I 
